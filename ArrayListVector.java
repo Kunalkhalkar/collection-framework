@@ -6,7 +6,7 @@ Vector methods like add(), get(), set()
 */
 import java.util.*;
 public class ArrayListVector{
-	public static void main(String ..x){
+	public static void main(String ...x){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the element in Array List");
 		ArrayList al = new ArrayList();
@@ -15,11 +15,14 @@ public class ArrayListVector{
 			al.add(sc.nextInt());
 		}
 		
-		Iterator it = al.iterator();
+		// Iterator it = al.iterator();
 		
-		Vector v= new Vector();
-		while(it.hasNext()){
-			v.add(it.next())
-		}
+		// Vector v= new Vector();
+		// while(it.hasNext()){
+			// v.add(it.next());
+		// }
+		Vector v= new Vector(al);
+		System.out.println(v);
+			
 	}
 }
