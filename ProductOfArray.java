@@ -16,6 +16,7 @@ public class ProductOfArray{
 			al.add(sc.nextInt());
 		}
 		Multiplication m = new Multiplication();
+		
 		ArrayList<Integer> str = m.getMultiplication(al);
 		System.out.println(str.toString());
 			
