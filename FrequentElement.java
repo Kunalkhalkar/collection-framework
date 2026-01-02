@@ -15,11 +15,16 @@ public class FrequentElement{
 		for(int i =0; i<5; i++){
 			al.add(sc.nextInt());
 		}
-		
+		int count = 0;
 		Stack<Integer> st = new Stack<>();
 		Map<Integer, Integer> hm = new HashMap<>();
 		for(int i = 0; i < al.size(); i++){
-			if
+			if(hm.contains(al.get(i))){
+				count = hm.getKey(i);
+				++count;
+				hm.setValue(al.get(i), count);
+				
+			}
 		}
 	}
 }
