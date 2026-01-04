@@ -13,6 +13,7 @@ public class FrequentElement{
 		
 		ArrayList<Integer> al = new ArrayList<>();
 		for(int i =0; i<5; i++){
+			
 			al.add(sc.nextInt());
 		}
 		int count = 0;
