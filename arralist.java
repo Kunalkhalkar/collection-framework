@@ -11,5 +11,6 @@ public class arralist{
 		for(int i=0; i<5; i++){
 			al.add(sc.nextInt());
 		}
+		
 	}
 }
