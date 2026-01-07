@@ -11,7 +11,6 @@ public class MyLinkedList2{
 			mll.addLast(sc.nextInt());
 		}
 		mll.iterate();
-		
 	}
 }
 
@@ -54,14 +53,12 @@ class MyLinkedList{
 			Node temp = head;
 		if(head == null){
 			System.out.println("list id empty");
-		}
-		else{
+		}else{
 			while(temp.getNext() != null)
 			{
 				temp = temp.getNext();
 			}
-		}
-			return temp;
+		}return temp;
 	}
 	
 	void addLast(int id){
