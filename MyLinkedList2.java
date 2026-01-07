@@ -56,7 +56,8 @@ class MyLinkedList{
 			System.out.println("list id empty");
 		}
 		else{
-			while(temp.getNext() != null){
+			while(temp.getNext() != null)
+			{
 				temp = temp.getNext();
 			}
 		}
