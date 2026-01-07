@@ -6,7 +6,7 @@ class MyLinkedList{
 	
 	class Node{
 		private String name;
-		private Node next;
+		private Node next; //next node address
 		
 		public String getName(){
 			return name;
