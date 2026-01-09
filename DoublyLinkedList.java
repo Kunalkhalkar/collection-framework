@@ -7,11 +7,14 @@ public class DoublyLinkedList{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the element in doubly linked list");
 		MyDoublyLinkedList mdl= new MyDoublyLinkedList();
-		mdl.addFirst(10);
-		mdl.addFirst(20);
-		mdl.addFirst(30);
+		mdl.addFirst(50);
 		mdl.addFirst(40);
+		mdl.addFirst(30);
+		mdl.addFirst(20);
 		mdl.iterate();
+		mdl.addLast(60);
+		mdl.iterate();
+		
 	}
 }
 class MyDoublyLinkedList{
@@ -65,7 +68,7 @@ class MyDoublyLinkedList{
 		Node temp = head;
 		Node tempR = null;
 		while(temp != null){
-			System.out.print(temp.getData()+ " -> ");
+			System.out.print(+temp.getData()+ " -> ");
 			tempR = temp;
 			temp = temp.getNext();
 		}
@@ -77,7 +80,23 @@ class MyDoublyLinkedList{
 			 tempR = tempR.getPrev();
 		 }
 		System.out.print("Null(head)");
+		System.out.println();
+		
 	}
 	
-
+	// add node after the last node
+	void addLast(int data){
+		Node temp = new Node(data);
+		Node lNode = traverse();
+		lNode.setNext(temp);
+		temp.setPrev(lNode);
+	}
+	
+	private Node traverse(){
+		Node temp = head;
+	while(temp.getNext() != null){
+		temp = temp.getNext();
+	}
+	return temp;
+	}
 }
