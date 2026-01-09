@@ -15,12 +15,13 @@ public class MyLinkedList2{
 }
 
 class MyLinkedList{
-	Node head = null;
+	Node head = null; //assigning head to null
 	
 	class Node{
 		private int id;
 		private Node next;
 		
+		//getters and setters
 		Node(int id){
 			this.id = id;
 		}
@@ -41,24 +42,24 @@ class MyLinkedList{
 	}
 	
 	void addFirst(int id){
-		if(head == null){
-			head = new Node(id);
+		if(head == null){ // checking if head is null
+			head = new Node(id); // if null object is createdd and stored in head
 			return;
 		}
-		 Node temp = new Node(id);
-		 temp.setNext(head);
-		 head = temp;
+		 Node temp = new Node(id); // if not null then create temp reference 
+		 temp.setNext(head);// store the head to temp's next 
+		 head = temp; // assign temp to head
 	} 
 	private Node traverse(){
 			Node temp = head;
 		if(head == null){
-			System.out.println("list id empty");
+			System.out.println("list is empty");
 		}else{
-			while(temp.getNext() != null)
+			while(temp.getNext() != null)// traversing the linked list to find last element
 			{
 				temp = temp.getNext();
 			}
-		}return temp;
+		}return temp; // returning last element
 	}
 	
 	void addLast(int id){
@@ -72,6 +73,7 @@ class MyLinkedList{
 	
 	void iterate(){
 		Node temp = head;
+		//printing the elements of linked list
 		while(temp != null){
 			System.out.print(temp.getId() +"->");
 			temp = temp.getNext();
