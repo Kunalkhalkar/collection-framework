@@ -16,5 +16,6 @@ public class FrequencyArrayList{
 			a[i] = sc.nextInt();
 		}
 		
+		
 	}
 }
