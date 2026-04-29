@@ -1,9 +1,9 @@
 /*checking edge conditions*/
 public class demo{
 	public static void main(String x[]){
-		int a = 'a';
-		int b = 'b';
-		System.out.println(a+b+5+'a'+"a");
+		// int a = 'a';
+		// int b = 'b';
+		// System.out.println(a+b+5+'a'+"a");
 		
 		/*on first step int a + int b = 195, 195+5 =200, 200+97=297, 297+"a" = 297a*/
 		
@@ -18,10 +18,11 @@ public class demo{
 			// System.out.println(i);// prints the value 100 to 1
 		// }
 		
-		char e = 'a';
-		char y = 'z';
-		char charactor = 'A';
-		String str = charactor >= e && charactor <= y ? "Lower Case" : "Upper Case";
-		System.out.println(str);
+		// char e = 'a';
+		// char y = 'z';
+		// char charactor = 'A';
+		// String str = charactor >= e && charactor <= y ? "Lower Case" : "Upper Case";
+		// System.out.println(str);
+		
 	}
 }
