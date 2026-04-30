@@ -17,7 +17,7 @@ public class StudentManage{
 			}
 			students[i] = new Student(id, name, marks);
 		}
-		Arrays.sort(students);
+		Arrays.sort(students);// sorts basis on id internally calls comparable
 		for(int i =0; i<students.length; i++){
 			System.out.println(students[i].id);
 		}
