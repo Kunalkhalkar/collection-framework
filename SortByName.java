@@ -42,7 +42,7 @@ class Student{ //student class to store data
 	}
 	
 }
-class SortByname implements Comparator<Student>{
+class SortByname implements Comparator<Student>{ //using comparator sorting
 	public int compare(Student s1, Student s2){
 		return s1.name.compareTo(s2.name);
 	}
