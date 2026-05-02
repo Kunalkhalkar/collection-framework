@@ -9,6 +9,7 @@ public class SortByName{
 		int id ;
 		String name;
 		int[] marks;
+		
 		Student students[] = new Student[3];
 		for(int i = 0; i<students.length; i++){
 			System.out.println("Enter the id, name and marks of student");
