@@ -10,15 +10,16 @@ public class SortByName{
 		String name;
 		int[] marks;
 		
-		Student students[] = new Student[3];
+		Student students[] = new Student[3];// array of objects		
 		for(int i = 0; i<students.length; i++){
 			System.out.println("Enter the id, name and marks of student");
 			id =sc.nextInt();
 			name = sc.next();
 			marks = new int[3];
+			
 			for(int j=0; j< marks.length; j++)
 			{
-				marks[j] = sc.nextInt();
+				marks[j] = sc.nextInt(); // inserting the data into the array
 			}
 			students[i] = new Student(id,name, marks);
 		}
