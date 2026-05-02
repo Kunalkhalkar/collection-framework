@@ -30,7 +30,7 @@ public class SortByName{
 	}
 }
 
-class Student{
+class Student{ //student class to store data
 	int id;
 	String name; 
 	int[] marks;
