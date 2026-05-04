@@ -12,6 +12,7 @@ public class SortByName{
 		
 		Student students[] = new Student[3];// array of objects		
 		for(int i = 0; i<students.length; i++){
+			
 			System.out.println("Enter the id, name and marks of student");
 			id =sc.nextInt();
 			name = sc.next();
