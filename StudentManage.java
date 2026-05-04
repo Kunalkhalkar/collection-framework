@@ -11,12 +11,15 @@ public class StudentManage{
 			int id = sc.nextInt();
 			String name = sc.next();
 			int marks[] = new int[3];
+			
 			for(int j =0; j< marks.length; j++){
 				System.out.println("Enter the subject mark");
 				marks[j] = sc.nextInt();
 			}
+			
 			students[i] = new Student(id, name, marks);
 		}
+		
 		Arrays.sort(students);// sorts basis on id internally calls comparable
 		for(int i =0; i<students.length; i++){
 			System.out.println(students[i].id);
