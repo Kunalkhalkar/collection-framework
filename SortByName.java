@@ -25,6 +25,7 @@ public class SortByName{
 			students[i] = new Student(id,name, marks);
 		}
 		Arrays.sort(students, new SortByname());
+		
 		for(int i =0; i< students.length; i++){
 			System.out.println(students[i].id +" \t"+students[i].name);
 		}
