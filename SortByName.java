@@ -22,6 +22,7 @@ public class SortByName{
 			{
 				marks[j] = sc.nextInt(); // inserting the data into the array
 			}
+			
 			students[i] = new Student(id,name, marks);
 		}
 		Arrays.sort(students, new SortByname());
