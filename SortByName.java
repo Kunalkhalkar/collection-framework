@@ -3,11 +3,8 @@ Problem: Sort Student objects alphabetically by name using a custom comparator. 
 */
 import java.util.*;
 public class SortByName{
-	
 	public static void main(String...x){
-	
 	Scanner sc = new Scanner(System.in);
-		
 		int id ;
 		String name;
 		int[] marks;
