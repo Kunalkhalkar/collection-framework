@@ -7,7 +7,7 @@ Output:Duplicate characters: r g m
 import java.util.*;
 public class DuplicateChars{
 	public static void main(String...x){
-		Scanner sc = new scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the String");
 		String str = sc.next();
 		
@@ -19,7 +19,9 @@ public class DuplicateChars{
 		}
 		
 		for(Character key:hm.keySet()){
-			if(hm.get(key) > 1)
+			if(hm.get(key) > 1){
+				System.out.print(key + "\t");
+			}
 		}
 	}
 }
